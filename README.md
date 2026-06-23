@@ -4,7 +4,6 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C.svg)](https://pytorch.org/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-F7931E.svg)](https://scikit-learn.org/)
 [![Bokeh](https://img.shields.io/badge/Bokeh-3.x-1A1A2E.svg)](https://bokeh.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > Unsupervised anomaly detection on multivariate aircraft sensor time-series, combining classical ML (Isolation Forest, LOF) and Deep Learning (Autoencoder). Developed as part of the **Advanced Master in Artificial Intelligence (AIBT)** at **ISAE-SUPAERO**.
 
@@ -16,13 +15,13 @@ Aircraft generate large volumes of sensor data per flight cycle. Detecting abnor
 
 This project tackles that exact constraint: **no labels are available**, and the goal is to flag suspicious flight windows based purely on the *shape* of the sensor signals.
 
-The work was carried out as part of the Anomaly Detection module of the AIBT Advanced Master at ISAE-SUPAERO (January 2025).
+The work was carried out as part of the Anomaly Detection module of the AIBT Advanced Master at ISAE-SUPAERO (January 2026).
 
 ---
 
 ## Dataset
 
-- **Source:** `dataset.csv` provided by the ISAE-SUPAERO Machine Learning teaching team.
+- **Source:** `dataset.csv` provided by the ISAE-SUPAERO Machine Learning teaching team & Airbus Commercial Aircraft.
 - **Granularity:** indexed by `day_cycle_window` (a unique key combining flight day, cycle, and time window).
 - **Features:** 11 anonymised sensor channels (`p1` to `p11`) — speed, temperature, pressure, electrical current, etc.
 - **Labels:** none. The task is fully **unsupervised**.
